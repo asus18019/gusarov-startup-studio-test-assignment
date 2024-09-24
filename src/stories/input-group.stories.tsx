@@ -11,38 +11,70 @@ const meta: Meta<StoryProps> = {
 	component: InputGroup,
 	argTypes: {
 		id: {
+            description: "Unique identifier",
 			control: {
 				type: "text"
 			}
 		},
+        value: {
+            description: "The current value of the input field",
+            control: {
+                type: "text"
+            }
+        },
+        placeholder: {
+            description: "Text displayed when the input field is empty.",
+            control: {
+                type: "text"
+            }
+        },
+        type: {
+            description: "Defines the type of the input",
+            options: ["text", "email", "password"],
+            control: {
+                type: "select"
+            }
+        },
 		size: {
-			options: ["small", "medium", "large"],
+            description: "Defines the size of the component.",
+            options: ["small", "medium", "large"],
 			control: {
 				type: "select"
 			}
 		},
 		labelText: {
-			control: {
+            description: "The text displayed as a label.",
+            control: {
 				type: "text"
 			}
 		},
 		error: {
-			control: {
+            description: "Indicates whether the input is in an error state.",
+            control: {
 				type: "boolean"
 			}
 		},
+        required: {
+            description: "Specifies whether the input field is mandatory.",
+            control: {
+                type: "boolean"
+            }
+        },
 		disabled: {
-			control: {
+            description: "Controls the quiet mode.",
+            control: {
 				type: "boolean"
 			}
 		},
 		annotationText: {
-			control: {
+            description: "Provides text for the user.",
+            control: {
 				type: "text"
 			}
 		},
 		quiet: {
-			control: {
+            description: "Controls the quiet mode.",
+            control: {
 				type: "boolean"
 			}
 		}

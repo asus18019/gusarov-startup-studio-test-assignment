@@ -11,43 +11,51 @@ const meta: Meta<StoryProps> = {
 	component: InputText,
 	argTypes: {
 		id: {
+            description: "Unique identifier.",
 			control: {
 				type: "text"
 			}
 		},
 		value: {
+            description: "The current value of the input field",
 			control: {
 				type: "text"
 			}
 		},
 		placeholder: {
+            description: "Text displayed when the input field is empty.",
 			control: {
 				type: "text"
 			}
 		},
 		type: {
+            description: "Defines the type of the input",
 			options: ["text", "email", "password"],
 			control: {
 				type: "select"
 			}
 		},
 		size: {
+            description: "Specifies the size of the input field",
 			options: ["small", "medium", "large"],
 			control: {
 				type: "select"
 			}
 		},
 		error: {
+            description: "Indicates whether the input is in an error state.",
 			control: {
 				type: "boolean"
 			}
 		},
 		disabled: {
+            description: "Disables the input field when set to true",
 			control: {
 				type: "boolean"
 			}
 		},
 		quiet: {
+            description: "Controls the quiet mode",
 			control: {
 				type: "boolean"
 			}

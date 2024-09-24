@@ -10,21 +10,27 @@ const meta: Meta<StoryProps & { annotationText: string }> = {
 	component: InputAnnotation,
 	argTypes: {
 		size: {
+            description: "Defines the size of the component",
 			options: ["small", "medium", "large"],
 			control: {
 				type: "select"
 			}
 		},
 		error: {
+            description: "Indicates if the component is in an error state.",
 			control: {
 				type: "boolean"
 			}
 		},
 		disabled: {
+            description: "Disables the component when set to true",
 			control: {
 				type: "boolean"
 			}
 		},
+        annotationText: {
+            description: "Provides text for the user."
+        }
 	},
 	args: {
 		annotationText: "This is a hint text to help user."

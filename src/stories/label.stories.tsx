@@ -10,21 +10,27 @@ const meta: Meta<StoryProps & { labelText: string }> = {
 	component: InputLabel,
 	argTypes: {
 		id: {
+            description: "Unique identifier.",
 			control: {
 				type: "text"
 			}
 		},
 		size: {
-			options: ["small", "medium", "large"],
+            description: "Defines the size of the component.",
+            options: ["small", "medium", "large"],
 			control: {
 				type: "select"
 			}
 		},
 		disabled: {
+            description: "Disables the component when set to true.",
 			control: {
 				type: "boolean"
 			}
-		}
+		},
+        labelText: {
+            description: "The text displayed as a label for the component."
+        }
 	},
 	args: {
 		labelText: "Email"
